@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema Gestor de Aulas — Joshua Aboytes</title>
+    <title>Sistema de Gimnasio (MERN) — Joshua Aboytes</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap"
@@ -29,24 +29,20 @@
         <a href="../index.html#proyectos" class="back-link">← volver a proyectos</a>
 
         <div class="proj-header">
-            <div class="section-label">proyecto 04 — [completar año]</div>
-            <h1>Sistema Gestor de Aulas<br>para <span class="accent">Cursos</span></h1>
+            <div class="section-label">proyecto 06 — [completar año]</div>
+            <h1>Sistema de Gimnasio<br><span class="accent">(MERN)</span></h1>
             <div class="proj-meta">
                 <div class="meta-item">
-                    <span class="meta-label">cliente / institución</span>
-                    <span class="meta-value">CFE</span>
+                    <span class="meta-label">tipo</span>
+                    <span class="meta-value">Aplicación web</span>
                 </div>
                 <div class="meta-item">
                     <span class="meta-label">año</span>
                     <span class="meta-value">[completar]</span>
                 </div>
                 <div class="meta-item">
-                    <span class="meta-label">IDE</span>
-                    <span class="meta-value">[completar]</span>
-                </div>
-                <div class="meta-item">
-                    <span class="meta-label">tipo</span>
-                    <span class="meta-value">Aplicación de escritorio</span>
+                    <span class="meta-label">stack</span>
+                    <span class="meta-value">MERN</span>
                 </div>
             </div>
         </div>
@@ -56,17 +52,12 @@
             <div class="gallery-grid gallery-grid--2">
 
                 <div class="gallery-item" onclick="openLightbox(this)">
-                    <img src="../img/proyecto4/captura1.png" alt="Pantalla principal">
+                    <img src="../img/proyecto6/captura1.png" alt="Captura 1">
                     <span class="gallery-caption">[describe esta captura]</span>
                 </div>
 
                 <div class="gallery-item" onclick="openLightbox(this)">
-                    <img src="../img/proyecto4/captura2.png" alt="Gestión de cursos">
-                    <span class="gallery-caption">[describe esta captura]</span>
-                </div>
-
-                <div class="gallery-item" onclick="openLightbox(this)">
-                    <img src="../img/proyecto4/captura3.png" alt="Gestión de zonas">
+                    <img src="../img/proyecto6/captura2.png" alt="Captura 2">
                     <span class="gallery-caption">[describe esta captura]</span>
                 </div>
 
@@ -78,22 +69,16 @@
             <div class="proj-section">
                 <h2>¿Qué es este proyecto?</h2>
                 <p>
-                    Sistema de escritorio desarrollado para la
-                    <strong style="color:var(--heading)">CFE</strong>, orientado a administrar la
-                    impartición de cursos de capacitación según las distintas zonas donde se llevan
-                    a cabo. Al ser una aplicación local, el sistema centraliza la información sin
-                    depender de una conexión externa, facilitando su uso dentro de la institución.
+                    [Completar: descripción general del sistema de gimnasio — para quién se desarrolló,
+                    qué problema resuelve (gestión de socios, membresías, rutinas, etc.) y cómo se usa.]
                 </p>
             </div>
 
             <div class="proj-section">
                 <h2>Función principal</h2>
                 <p>
-                    El sistema gestiona el <strong style="color:var(--heading)">registro, organización
-                        y consulta de cursos</strong> asignados a cada zona de implementación, permitiendo
-                    tener un control claro de qué se está impartiendo y en dónde. Toda la información
-                    se almacena de forma local mediante una base de datos MariaDB, lo que mantiene la
-                    aplicación funcionando de manera independiente.
+                    [Completar: funciones principales, por ejemplo registro de socios, control de
+                    membresías y pagos, asignación de rutinas o clases, reportes de asistencia, etc.]
                 </p>
             </div>
 
@@ -101,19 +86,24 @@
                 <h2>Stack tecnológico</h2>
                 <div class="tech-grid">
                     <div class="tech-item">
-                        <span class="tech-icon">C#</span>
-                        <span class="tech-name">C#</span>
-                        <span class="tech-role">Lógica de negocio e interfaz</span>
+                        <span class="tech-icon">⚛</span>
+                        <span class="tech-name">React</span>
+                        <span class="tech-role">Librería — interfaz de usuario</span>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-icon">JS</span>
+                        <span class="tech-name">Node.js</span>
+                        <span class="tech-role">Entorno de ejecución backend</span>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-icon">EX</span>
+                        <span class="tech-name">Express</span>
+                        <span class="tech-role">Framework — API REST</span>
                     </div>
                     <div class="tech-item">
                         <span class="tech-icon">DB</span>
-                        <span class="tech-name">MariaDB SQL</span>
-                        <span class="tech-role">Base de datos relacional local</span>
-                    </div>
-                    <div class="tech-item">
-                        <span class="tech-icon">VS</span>
-                        <span class="tech-name">[completar IDE]</span>
-                        <span class="tech-role">IDE de desarrollo</span>
+                        <span class="tech-name">MongoDB</span>
+                        <span class="tech-role">Base de datos NoSQL</span>
                     </div>
                 </div>
             </div>
@@ -121,10 +111,8 @@
             <div class="proj-section">
                 <h2>Lo que aprendí</h2>
                 <p>
-                    Este proyecto me permitió trabajar con C# para el desarrollo de aplicaciones de
-                    escritorio, conectando la interfaz directamente con una base de datos local en
-                    MariaDB. También reforcé el diseño de un modelo de datos organizado por zonas,
-                    pensado para un uso institucional real dentro de la CFE.
+                    [Completar: qué aprendiste trabajando con el stack MERN — por ejemplo manejo de
+                    estado en React, diseño de esquemas en MongoDB, autenticación, consumo de API, etc.]
                 </p>
             </div>
 

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Pagos UMA — Joshua Aboytes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+  <nav class="nav">
+    <span class="nav-logo">dev<span class="accent">.</span>portfolio</span>
+    <ul class="nav-links">
+      <li><a href="../index.html#sobre-mi">sobre mí</a></li>
+      <li><a href="../index.html#habilidades">habilidades</a></li>
+      <li><a href="../index.html#proyectos">proyectos</a></li>
+      <li><a href="../index.html#contacto">contacto</a></li>
+    </ul>
+  </nav>
+
+  <div class="project-page">
+
+    <a href="../index.html#proyectos" class="back-link">← volver a proyectos</a>
+
+    <div class="proj-header">
+      <div class="section-label">proyecto 05 — [completar año]</div>
+      <h1>Sistema de<br><span class="accent">Pagos UMA</span></h1>
+      <div class="proj-meta">
+        <div class="meta-item">
+          <span class="meta-label">cliente / institución</span>
+          <span class="meta-value">CFE Zona Sur Volcanes</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">año</span>
+          <span class="meta-value">[completar]</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">contexto</span>
+          <span class="meta-value">Práctica integrativa</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">tipo</span>
+          <span class="meta-value">Aplicación web</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery-section">
+      <div class="gallery-title">capturas del proyecto — haz clic para ampliar</div>
+      <div class="gallery-grid gallery-grid--2">
+
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="../img/proyecto5/captura1.png" alt="Pantalla principal">
+          <span class="gallery-caption">[describe esta captura]</span>
+        </div>
+
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="../img/proyecto5/captura2.png" alt="Cálculo de UMA">
+          <span class="gallery-caption">[describe esta captura]</span>
+        </div>
+
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="../img/proyecto5/captura3.png" alt="Registro de instructores">
+          <span class="gallery-caption">[describe esta captura]</span>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="proj-body">
+
+      <div class="proj-section">
+        <h2>¿Qué es este proyecto?</h2>
+        <p>
+          Sistema web desarrollado durante mi práctica integrativa en la
+          <strong style="color:var(--heading)">CFE Zona Sur Volcanes</strong>, pensado para
+          administrar el pago de los instructores y dar seguimiento a los cursos que
+          imparten dentro de la institución.
+        </p>
+      </div>
+
+      <div class="proj-section">
+        <h2>Función principal</h2>
+        <p>
+          La aplicación <strong style="color:var(--heading)">optimiza el cálculo del pago de
+            instructores</strong> con base en la UMA (Unidad de Medida y Actualización) y las
+          horas cumplidas en cada curso, agilizando un proceso que antes se realizaba de
+          forma manual y reduciendo el margen de error en los cálculos.
+        </p>
+      </div>
+
+      <div class="proj-section">
+        <h2>Stack tecnológico</h2>
+        <div class="tech-grid">
+          <div class="tech-item">
+            <span class="tech-icon">▲</span>
+            <span class="tech-name">Angular</span>
+            <span class="tech-role">Framework — capa de vista</span>
+          </div>
+          <div class="tech-item">
+            <span class="tech-icon">JS</span>
+            <span class="tech-name">Node.js</span>
+            <span class="tech-role">Entorno de ejecución backend</span>
+          </div>
+          <div class="tech-item">
+            <span class="tech-icon">EX</span>
+            <span class="tech-name">Express</span>
+            <span class="tech-role">Framework — API REST</span>
+          </div>
+          <div class="tech-item">
+            <span class="tech-icon">DB</span>
+            <span class="tech-name">MariaDB SQL</span>
+            <span class="tech-role">Base de datos relacional</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-section">
+        <h2>Lo que aprendí</h2>
+        <p>
+          Este proyecto me permitió trabajar con un stack completo (Angular, Node.js,
+          Express y MariaDB) dentro de un entorno laboral real. Aprendí a automatizar
+          cálculos administrativos sensibles, a diseñar una API REST con Express y a
+          conectar el frontend en Angular con el backend de manera ordenada.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="proj-cta">
+      <a href="https://github.com/JoshFDev" target="_blank" class="btn btn-primary">Ver en GitHub</a>
+      <a href="../index.html#proyectos" class="btn btn-ghost">← Más proyectos</a>
+    </div>
+
+  </div>
+
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <button class="lightbox-close" onclick="closeLightbox()">✕ cerrar</button>
+    <img id="lightbox-img" src="" alt="Captura ampliada">
+  </div>
+
+  <footer class="footer">
+    <span>© 2026 Aboytes Uribe Joshua Sebastian — Hecho con HTML, CSS y café.</span>
+  </footer>
+
+  <script>
+    function openLightbox(el) {
+      const img = el.querySelector('img');
+      if (!img) return;
+      document.getElementById('lightbox-img').src = img.src;
+      document.getElementById('lightbox').classList.add('active');
+    }
+    function closeLightbox() {
+      document.getElementById('lightbox').classList.remove('active');
+    }
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') closeLightbox();
+    });
+  </script>
+
+</body>
+
+</html>
