@@ -7,251 +7,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
-  <style>
-    .project-page {
-      max-width: 860px;
-      margin: 0 auto;
-      padding: 4rem 2.5rem 6rem;
-    }
-    .back-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.4rem;
-      font-family: var(--font-mono);
-      font-size: 0.75rem;
-      color: var(--text-dim);
-      letter-spacing: 0.06em;
-      margin-bottom: 3rem;
-      transition: color 0.2s;
-    }
-    .back-link:hover { color: var(--accent); }
-
-    .proj-header { margin-bottom: 2.5rem; }
-    .proj-header h1 {
-      font-size: clamp(1.8rem, 4vw, 2.6rem);
-      color: var(--heading);
-      margin: 0.6rem 0 1rem;
-    }
-    .proj-meta {
-      display: flex;
-      gap: 2.5rem;
-      flex-wrap: wrap;
-      padding: 1.4rem 0;
-      border-top: 1px solid var(--border);
-      border-bottom: 1px solid var(--border);
-    }
-    .meta-item { display: flex; flex-direction: column; gap: 0.25rem; }
-    .meta-label {
-      font-family: var(--font-mono);
-      font-size: 0.65rem;
-      color: var(--text-dim);
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-    }
-    .meta-value { font-size: 0.88rem; color: var(--heading); }
-
-    /* ── GALLERY ── */
-    .gallery-section { margin: 3rem 0; }
-    .gallery-title {
-      font-family: var(--font-mono);
-      font-size: 0.7rem;
-      color: var(--text-dim);
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      margin-bottom: 1rem;
-    }
-    .gallery-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 1px;
-      background: var(--border);
-      border: 1px solid var(--border);
-    }
-    .gallery-item {
-      position: relative;
-      background: var(--bg-card);
-      cursor: pointer;
-      overflow: hidden;
-    }
-    .gallery-item img {
-      width: 100%;
-      height: auto;
-      display: block;
-      transition: opacity 0.25s;
-    }
-    .gallery-item:hover img { opacity: 0.8; }
-    .gallery-caption {
-      position: absolute;
-      bottom: 0; left: 0; right: 0;
-      padding: 0.45rem 0.8rem;
-      background: rgba(0,0,0,0.78);
-      font-family: var(--font-mono);
-      font-size: 0.68rem;
-      color: var(--text-dim);
-      opacity: 0;
-      transition: opacity 0.2s;
-    }
-    .gallery-item:hover .gallery-caption { opacity: 1; }
-
-    /* ── LIGHTBOX ── */
-    .lightbox {
-      display: none;
-      position: fixed;
-      inset: 0;
-      background: rgba(0,0,0,0.96);
-      z-index: 999;
-      align-items: center;
-      justify-content: center;
-      padding: 2rem;
-    }
-    .lightbox.active { display: flex; }
-    .lightbox img {
-      max-width: 92vw;
-      max-height: 90vh;
-      width: auto;
-      height: auto;
-      display: block;
-      border: 1px solid var(--border);
-    }
-    .lightbox-close {
-      position: absolute;
-      top: 1.5rem; right: 1.5rem;
-      font-family: var(--font-mono);
-      font-size: 0.8rem;
-      color: var(--text-dim);
-      cursor: pointer;
-      background: none;
-      border: 1px solid var(--border);
-      padding: 0.4rem 0.8rem;
-      transition: color 0.2s, border-color 0.2s;
-    }
-    .lightbox-close:hover { color: var(--accent); border-color: var(--accent); }
-
-    /* ── MÓDULOS / ACCIONES ── */
-    .modules-section { margin: 3rem 0 0; }
-
-    .modules-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-      gap: 1px;
-      background: var(--border);
-      border: 1px solid var(--border);
-      margin-top: 1rem;
-    }
-
-    .module-card {
-      background: var(--bg-card);
-      padding: 1.6rem;
-      display: flex;
-      flex-direction: column;
-      gap: 0.6rem;
-      transition: background 0.2s;
-    }
-    .module-card:hover { background: var(--bg-hover); }
-
-    .module-icon {
-      font-family: var(--font-mono);
-      font-size: 1rem;
-      color: var(--accent);
-    }
-
-    .module-title {
-      font-size: 0.95rem;
-      font-weight: 600;
-      color: var(--heading);
-    }
-
-    .module-desc {
-      font-size: 0.8rem;
-      color: var(--text-dim);
-      font-family: var(--font-mono);
-      margin-bottom: 0.4rem;
-    }
-
-    .module-links {
-      display: flex;
-      gap: 0.5rem;
-      flex-wrap: wrap;
-      margin-top: auto;
-    }
-
-    .module-link {
-      font-family: var(--font-mono);
-      font-size: 0.7rem;
-      padding: 0.3rem 0.75rem;
-      border: 1px solid var(--border);
-      color: var(--text-dim);
-      transition: color 0.18s, border-color 0.18s;
-      white-space: nowrap;
-    }
-    .module-link:hover {
-      color: var(--accent);
-      border-color: var(--accent);
-    }
-    .module-link.primary {
-      background: var(--accent-dim);
-      color: var(--accent);
-      border-color: var(--accent);
-    }
-    .module-link.primary:hover {
-      background: transparent;
-    }
-
-    /* ── BODY ── */
-    .proj-body { display: flex; flex-direction: column; }
-    .proj-section {
-      padding: 2rem 0;
-      border-bottom: 1px solid var(--border);
-    }
-    .proj-section:last-of-type { border-bottom: none; }
-    .proj-section h2 {
-      font-size: 0.95rem;
-      font-weight: 600;
-      color: var(--heading);
-      margin-bottom: 0.8rem;
-    }
-    .proj-section p {
-      font-size: 0.92rem;
-      color: var(--text);
-      line-height: 1.75;
-    }
-
-    /* ── TECH GRID ── */
-    .tech-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(155px, 1fr));
-      gap: 1px;
-      background: var(--border);
-      border: 1px solid var(--border);
-      margin-top: 1rem;
-    }
-    .tech-item {
-      background: var(--bg-card);
-      padding: 1.2rem;
-      display: flex;
-      flex-direction: column;
-      gap: 0.3rem;
-      transition: background 0.2s;
-    }
-    .tech-item:hover { background: var(--bg-hover); }
-    .tech-icon {
-      font-family: var(--font-mono);
-      font-size: 0.9rem;
-      color: var(--accent);
-      margin-bottom: 0.2rem;
-    }
-    .tech-name { font-size: 0.88rem; color: var(--heading); font-weight: 600; }
-    .tech-role { font-size: 0.72rem; color: var(--text-dim); font-family: var(--font-mono); }
-
-    .proj-cta { display: flex; gap: 1rem; flex-wrap: wrap; padding-top: 2.5rem; }
-
-    @media (max-width: 600px) {
-      .gallery-grid { grid-template-columns: 1fr; }
-      .modules-grid { grid-template-columns: 1fr; }
-      .proj-meta { gap: 1.5rem; }
-      .project-page { padding: 2.5rem 1.2rem 4rem; }
-    }
-  </style>
 </head>
 <body>
 
@@ -269,11 +24,9 @@
 
     <a href="../index.html#proyectos" class="back-link">← volver a proyectos</a>
 
-    <!-- HEADER -->
     <div class="proj-header">
       <div class="section-label">proyecto 02 — 2025</div>
       <h1>Sistema de<br><span class="accent">Punto de Venta</span></h1>
-
       <div class="proj-meta">
         <div class="meta-item">
           <span class="meta-label">tipo</span>
@@ -290,10 +43,9 @@
       </div>
     </div>
 
-    <!-- GALLERY -->
     <div class="gallery-section">
       <div class="gallery-title">capturas del proyecto — haz clic para ampliar</div>
-      <div class="gallery-grid">
+      <div class="gallery-grid gallery-grid--2">
 
         <div class="gallery-item" onclick="openLightbox(this)">
           <img src="../img/proyecto2/captura1.png" alt="Dashboard principal">
@@ -318,7 +70,6 @@
       </div>
     </div>
 
-    <!-- MÓDULOS -->
     <div class="proj-body">
 
       <div class="proj-section">
@@ -336,32 +87,26 @@
         <h2>Módulos del sistema</h2>
         <p style="margin-bottom:0">El sistema está organizado en cinco módulos principales, cada uno con acciones de alta y consulta:</p>
         <div class="modules-grid">
-
           <div class="module-card">
             <span class="module-title">Nueva Venta</span>
             <span class="module-desc">Registrar una nueva transacción</span>
           </div>
-
           <div class="module-card">
             <span class="module-title">Gestión de Productos</span>
             <span class="module-desc">Administrar inventario</span>
           </div>
-
           <div class="module-card">
             <span class="module-title">Gestión de Clientes</span>
             <span class="module-desc">Administrar base de clientes</span>
           </div>
-
           <div class="module-card">
             <span class="module-title">Gestión de Categorías</span>
             <span class="module-desc">Administrar categorías de productos</span>
           </div>
-
           <div class="module-card">
             <span class="module-title">Detalle de Ventas</span>
             <span class="module-desc">Generar reportes de ventas</span>
           </div>
-
         </div>
       </div>
 
@@ -374,7 +119,7 @@
             <span class="tech-role">MVC — lógica y controladores</span>
           </div>
           <div class="tech-item">
-            <span class="tech-icon">☕</span>
+            <span class="tech-icon">Java</span>
             <span class="tech-name">Java</span>
             <span class="tech-role">Lógica de negocio</span>
           </div>
@@ -411,7 +156,6 @@
 
   </div>
 
-  <!-- LIGHTBOX -->
   <div class="lightbox" id="lightbox" onclick="closeLightbox()">
     <button class="lightbox-close" onclick="closeLightbox()">✕ cerrar</button>
     <img id="lightbox-img" src="" alt="Captura ampliada">

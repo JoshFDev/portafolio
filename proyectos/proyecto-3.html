@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Club Deportivo — Sistema de Gestión — Joshua Aboytes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <span class="nav-logo">dev<span class="accent">.</span>portfolio</span>
+    <ul class="nav-links">
+      <li><a href="../index.html#sobre-mi">sobre mí</a></li>
+      <li><a href="../index.html#habilidades">habilidades</a></li>
+      <li><a href="../index.html#proyectos">proyectos</a></li>
+      <li><a href="../index.html#contacto">contacto</a></li>
+    </ul>
+  </nav>
+
+  <div class="project-page">
+
+    <a href="../index.html#proyectos" class="back-link">← volver a proyectos</a>
+
+    <!-- HEADER -->
+    <div class="proj-header">
+      <div class="section-label">proyecto 03 — 2025</div>
+      <h1>Sistema de Gestión<br><span class="accent">Club Deportivo</span></h1>
+
+      <div class="proj-meta">
+        <div class="meta-item">
+          <span class="meta-label">tipo</span>
+          <span class="meta-value">Aplicación web fullstack</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">año</span>
+          <span class="meta-value">2025</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">frontend</span>
+          <span class="meta-value">Angular 17</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">backend</span>
+          <span class="meta-value">Node.js</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">IDE</span>
+          <span class="meta-value">Visual Studio Code</span>
+        </div>
+      </div>
+
+      <div class="collab-banner">
+        <span class="collab-icon">⟳</span>
+        <span class="collab-text">
+          Proyecto colaborativo desarrollado en equipo junto a
+          <strong>Cazares Hernandez Sergio Axel</strong> y
+          <strong>Estrada Hernandez Agustín</strong>.
+          El sistema más ambicioso y completo que hemos construido hasta ahora.
+        </span>
+      </div>
+    </div>
+
+    <!-- GALLERY -->
+    <div class="gallery-section">
+      <div class="gallery-title">capturas del proyecto — haz clic para ampliar</div>
+      <div class="gallery-grid">
+
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="../img/proyecto3/captura1.png" alt="Pantalla de login">
+          <span class="gallery-caption">Pantalla de inicio de sesión</span>
+        </div>
+
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="../img/proyecto3/captura2.png" alt="Recuperación de contraseña">
+          <span class="gallery-caption">Recuperación de contraseña</span>
+        </div>
+
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="../img/proyecto3/captura3.png" alt="Creación de usuarios">
+          <span class="gallery-caption">Creación de usuarios</span>
+        </div>
+
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="../img/proyecto3/captura4.png" alt="Dashboard principal">
+          <span class="gallery-caption">Dashboard principal del administrador</span>
+        </div>
+
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="../img/proyecto3/captura5.png" alt="Menú del administrador">
+          <span class="gallery-caption">Menú del administrador</span>
+        </div>
+
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="../img/proyecto3/captura6.png" alt="Vista de disciplinas">
+          <span class="gallery-caption">Vista de las disciplinas</span>
+        </div>
+
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="../img/proyecto3/captura7.png" alt="Inscripciones">
+          <span class="gallery-caption">Apartado de las inscripciones</span>
+        </div>
+
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="../img/proyecto3/captura8.png" alt="Lista de usuarios">
+          <span class="gallery-caption">Lista de usuarios</span>
+        </div>
+
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="../img/proyecto3/captura9.png" alt="Eventos deportivos">
+          <span class="gallery-caption">Lista de eventos y edición</span>
+        </div>
+
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="../img/proyecto3/captura10.png" alt="Eventos para miembro">
+          <span class="gallery-caption">Vista de eventos — usuario miembro</span>
+        </div>
+
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="../img/proyecto3/captura11.png" alt="Disciplinas para miembro">
+          <span class="gallery-caption">Vista de disciplinas — usuario miembro</span>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- BODY -->
+    <div class="proj-body">
+
+      <div class="proj-section">
+        <h2>¿Qué es este proyecto?</h2>
+        <p>
+          Sistema web fullstack para la administración completa de un club deportivo.
+          Permite gestionar miembros, entrenadores, disciplinas, inscripciones y eventos
+          deportivos desde una sola plataforma. Cuenta con autenticación por roles
+          (administrador y miembro), recuperación de contraseña, y un panel diferenciado
+          según el tipo de usuario. Es el proyecto más robusto y colaborativo que hemos
+          desarrollado como equipo.
+        </p>
+      </div>
+
+      <div class="proj-section">
+        <h2>Módulos del sistema</h2>
+        <p style="margin-bottom:0">El sistema cubre el ciclo completo de operación de un club deportivo:</p>
+        <div class="modules-grid">
+          <div class="module-card">
+            <span class="module-title">Autenticación</span>
+            <span class="module-desc">Login, roles y recuperación de contraseña</span>
+          </div>
+          <div class="module-card">
+            <span class="module-title">Gestión de Usuarios</span>
+            <span class="module-desc">Creación y administración de cuentas</span>
+          </div>
+          <div class="module-card">
+            <span class="module-title">Miembros</span>
+            <span class="module-desc">Alta, consulta y perfil de miembros</span>
+          </div>
+          <div class="module-card">
+            <span class="module-title">Entrenadores</span>
+            <span class="module-desc">Registro y asignación por disciplina</span>
+          </div>
+          <div class="module-card">
+            <span class="module-title">Disciplinas</span>
+            <span class="module-desc">Fútbol, baloncesto, taekwondo y más</span>
+          </div>
+          <div class="module-card">
+            <span class="module-title">Inscripciones</span>
+            <span class="module-desc">Registro de miembros a disciplinas</span>
+          </div>
+          <div class="module-card">
+            <span class="module-title">Eventos Deportivos</span>
+            <span class="module-desc">Creación y participación en eventos</span>
+          </div>
+          <div class="module-card">
+            <span class="module-title">Panel Admin</span>
+            <span class="module-desc">Control total del sistema</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-section">
+        <h2>Stack tecnológico</h2>
+        <div class="tech-grid">
+          <div class="tech-item">
+            <span class="tech-icon">▲</span>
+            <span class="tech-name">Angular 17</span>
+            <span class="tech-role">Frontend SPA</span>
+          </div>
+          <div class="tech-item">
+            <span class="tech-icon">⬡</span>
+            <span class="tech-name">Node.js</span>
+            <span class="tech-role">Backend / API REST</span>
+          </div>
+          <div class="tech-item">
+            <span class="tech-icon">DB</span>
+            <span class="tech-name">MariaDB</span>
+            <span class="tech-role">Base de datos relacional</span>
+          </div>
+          <div class="tech-item">
+            <span class="tech-icon">VS</span>
+            <span class="tech-name">VS Code</span>
+            <span class="tech-role">IDE de desarrollo</span>
+          </div>
+          <div class="tech-item">
+            <span class="tech-icon">JWT</span>
+            <span class="tech-name">JSON Web Token</span>
+            <span class="tech-role">Autenticación por token</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-section">
+        <h2>Trabajo en equipo</h2>
+        <p>
+          Este sistema fue el resultado de un esfuerzo colaborativo real: dividimos los módulos
+          por área de responsabilidad, usamos Git para coordinar el trabajo y resolvimos
+          conflictos de integración entre el frontend en Angular y la API en Node.js.
+          Aprendimos a comunicar decisiones técnicas, documentar endpoints y mantener
+          consistencia en la base de datos compartida. Fue el proyecto que más nos exigió
+          como equipo y del que más orgullosos estamos.
+        </p>
+      </div>
+
+      <div class="proj-section">
+        <h2>Lo que aprendí</h2>
+        <p>
+          Fue mi primera experiencia real con Angular 17 y su ecosistema: componentes standalone,
+          servicios, guards de rutas y manejo de formularios reactivos. En el backend aprendí
+          a estructurar una API REST con Node.js, manejar autenticación con JWT por roles y
+          conectar con MariaDB. También reforcé el diseño de bases de datos relacionales con
+          múltiples tablas interconectadas: miembros, entrenadores, disciplinas, inscripciones
+          y eventos deportivos.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="proj-cta">
+      <a href="https://github.com/JoshFDev" target="_blank" class="btn btn-primary">Ver en GitHub</a>
+      <a href="../index.html#proyectos" class="btn btn-ghost">← Más proyectos</a>
+    </div>
+
+  </div>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <button class="lightbox-close" onclick="closeLightbox()">✕ cerrar</button>
+    <img id="lightbox-img" src="" alt="Captura ampliada">
+  </div>
+
+  <footer class="footer">
+    <span>© 2026 Aboytes Uribe Joshua Sebastian — Hecho con HTML, CSS y café.</span>
+  </footer>
+
+  <script>
+    function openLightbox(el) {
+      const img = el.querySelector('img');
+      if (!img) return;
+      document.getElementById('lightbox-img').src = img.src;
+      document.getElementById('lightbox').classList.add('active');
+    }
+    function closeLightbox() {
+      document.getElementById('lightbox').classList.remove('active');
+    }
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') closeLightbox();
+    });
+  </script>
+
+</body>
+</html>
