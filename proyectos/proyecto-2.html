@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gestión de Cadetes — Joshua Aboytes</title>
+  <title>Sistema Punto de Venta — Joshua Aboytes</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
@@ -25,6 +25,7 @@
       transition: color 0.2s;
     }
     .back-link:hover { color: var(--accent); }
+
     .proj-header { margin-bottom: 2.5rem; }
     .proj-header h1 {
       font-size: clamp(1.8rem, 4vw, 2.6rem);
@@ -72,7 +73,6 @@
       cursor: pointer;
       overflow: hidden;
     }
-    /* Imagen ocupa todo el ancho, alto natural — sin recorte */
     .gallery-item img {
       width: 100%;
       height: auto;
@@ -127,6 +127,76 @@
     }
     .lightbox-close:hover { color: var(--accent); border-color: var(--accent); }
 
+    /* ── MÓDULOS / ACCIONES ── */
+    .modules-section { margin: 3rem 0 0; }
+
+    .modules-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+      margin-top: 1rem;
+    }
+
+    .module-card {
+      background: var(--bg-card);
+      padding: 1.6rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      transition: background 0.2s;
+    }
+    .module-card:hover { background: var(--bg-hover); }
+
+    .module-icon {
+      font-family: var(--font-mono);
+      font-size: 1rem;
+      color: var(--accent);
+    }
+
+    .module-title {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--heading);
+    }
+
+    .module-desc {
+      font-size: 0.8rem;
+      color: var(--text-dim);
+      font-family: var(--font-mono);
+      margin-bottom: 0.4rem;
+    }
+
+    .module-links {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      margin-top: auto;
+    }
+
+    .module-link {
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      padding: 0.3rem 0.75rem;
+      border: 1px solid var(--border);
+      color: var(--text-dim);
+      transition: color 0.18s, border-color 0.18s;
+      white-space: nowrap;
+    }
+    .module-link:hover {
+      color: var(--accent);
+      border-color: var(--accent);
+    }
+    .module-link.primary {
+      background: var(--accent-dim);
+      color: var(--accent);
+      border-color: var(--accent);
+    }
+    .module-link.primary:hover {
+      background: transparent;
+    }
+
     /* ── BODY ── */
     .proj-body { display: flex; flex-direction: column; }
     .proj-section {
@@ -177,6 +247,7 @@
 
     @media (max-width: 600px) {
       .gallery-grid { grid-template-columns: 1fr; }
+      .modules-grid { grid-template-columns: 1fr; }
       .proj-meta { gap: 1.5rem; }
       .project-page { padding: 2.5rem 1.2rem 4rem; }
     }
@@ -198,102 +269,119 @@
 
     <a href="../index.html#proyectos" class="back-link">← volver a proyectos</a>
 
+    <!-- HEADER -->
     <div class="proj-header">
-      <div class="section-label">proyecto 01 — 2024</div>
-      <h1>Sistema de Gestión<br>de <span class="accent">Cadetes</span></h1>
+      <div class="section-label">proyecto 02 — 2025</div>
+      <h1>Sistema de<br><span class="accent">Punto de Venta</span></h1>
+
       <div class="proj-meta">
         <div class="meta-item">
-          <span class="meta-label">cliente / institución</span>
-          <span class="meta-value">Escuela Militar de Transmisiones</span>
+          <span class="meta-label">tipo</span>
+          <span class="meta-value">Aplicación web</span>
         </div>
         <div class="meta-item">
           <span class="meta-label">año</span>
-          <span class="meta-value">2024</span>
+          <span class="meta-value">2025</span>
         </div>
         <div class="meta-item">
           <span class="meta-label">IDE</span>
           <span class="meta-value">NetBeans 8.2</span>
         </div>
-        <div class="meta-item">
-          <span class="meta-label">tipo</span>
-          <span class="meta-value">Aplicación web interna</span>
-        </div>
       </div>
     </div>
 
+    <!-- GALLERY -->
     <div class="gallery-section">
       <div class="gallery-title">capturas del proyecto — haz clic para ampliar</div>
       <div class="gallery-grid">
 
         <div class="gallery-item" onclick="openLightbox(this)">
-          <img src="../img/proyecto1/captura1.png" alt="Pantalla de login">
-          <span class="gallery-caption">Inicio de sesión al sistema</span>
+          <img src="../img/proyecto2/captura1.png" alt="Dashboard principal">
+          <span class="gallery-caption">Dashboard / menú principal</span>
         </div>
 
         <div class="gallery-item" onclick="openLightbox(this)">
-          <img src="../img/proyecto1/captura2.png" alt="Listado de cadetes">
-          <span class="gallery-caption">Vista principal — registro de cadetes</span>
+          <img src="../img/proyecto2/captura2.png" alt="Nueva venta">
+          <span class="gallery-caption">Registro de nueva venta</span>
         </div>
 
         <div class="gallery-item" onclick="openLightbox(this)">
-          <img src="../img/proyecto1/captura3.png" alt="Formulario de ingreso">
-          <span class="gallery-caption">Alta de nuevo cadete</span>
+          <img src="../img/proyecto2/captura3.png" alt="Inventario de productos">
+          <span class="gallery-caption">Gestión de inventario</span>
         </div>
 
         <div class="gallery-item" onclick="openLightbox(this)">
-          <img src="../img/proyecto1/captura4.png" alt="Cursos para cadetes">
-          <span class="gallery-caption">Altas de cursos para los cadetes</span>
+          <img src="../img/proyecto2/captura4.png" alt="Historial de ventas">
+          <span class="gallery-caption">Historial y detalle de ventas</span>
         </div>
 
       </div>
     </div>
 
+    <!-- MÓDULOS -->
     <div class="proj-body">
 
       <div class="proj-section">
         <h2>¿Qué es este proyecto?</h2>
         <p>
-          Sistema de información desarrollado para la
-          <strong style="color:var(--heading)">Escuela Militar de Transmisiones</strong>,
-          diseñado para administrar el proceso de ingreso, seguimiento y control de cadetes.
-          La aplicación centraliza los registros de la institución, evita duplicidades y
-          permite consultar el historial de cada cadete de forma rápida y ordenada.
+          Sistema de punto de venta desarrollado con Spring Framework y Java, que permite
+          gestionar el ciclo completo de ventas de un negocio: desde el registro de productos
+          e inventario hasta la atención a clientes y la generación de reportes de transacciones.
+          La aplicación corre en un servidor local y centraliza todas las operaciones comerciales
+          en una sola interfaz web.
         </p>
       </div>
 
       <div class="proj-section">
-        <h2>Función principal</h2>
-        <p>
-          El sistema gestiona el <strong style="color:var(--heading)">registro, alta, baja y consulta de
-          cadetes</strong> ingresados a la institución. Permite capturar datos personales e información
-          militar de cada cadete, así como llevar un control de su estado dentro de la escuela.
-          Todo el flujo opera desde una interfaz web interna que se conecta directamente con
-          la base de datos institucional mediante Hibernate como capa de persistencia.
-        </p>
+        <h2>Módulos del sistema</h2>
+        <p style="margin-bottom:0">El sistema está organizado en cinco módulos principales, cada uno con acciones de alta y consulta:</p>
+        <div class="modules-grid">
+
+          <div class="module-card">
+            <span class="module-title">Nueva Venta</span>
+            <span class="module-desc">Registrar una nueva transacción</span>
+          </div>
+
+          <div class="module-card">
+            <span class="module-title">Gestión de Productos</span>
+            <span class="module-desc">Administrar inventario</span>
+          </div>
+
+          <div class="module-card">
+            <span class="module-title">Gestión de Clientes</span>
+            <span class="module-desc">Administrar base de clientes</span>
+          </div>
+
+          <div class="module-card">
+            <span class="module-title">Gestión de Categorías</span>
+            <span class="module-desc">Administrar categorías de productos</span>
+          </div>
+
+          <div class="module-card">
+            <span class="module-title">Detalle de Ventas</span>
+            <span class="module-desc">Generar reportes de ventas</span>
+          </div>
+
+        </div>
       </div>
 
       <div class="proj-section">
         <h2>Stack tecnológico</h2>
         <div class="tech-grid">
           <div class="tech-item">
-            <span class="tech-icon">HB</span>
-            <span class="tech-name">Hibernate</span>
-            <span class="tech-role">ORM — persistencia de datos</span>
+            <span class="tech-icon">🌿</span>
+            <span class="tech-name">Spring Framework</span>
+            <span class="tech-role">MVC — lógica y controladores</span>
           </div>
           <div class="tech-item">
-            <span class="tech-icon">JSF</span>
-            <span class="tech-name">JavaServer Faces</span>
-            <span class="tech-role">Framework — capa de vista</span>
+            <span class="tech-icon">☕</span>
+            <span class="tech-name">Java</span>
+            <span class="tech-role">Lógica de negocio</span>
           </div>
           <div class="tech-item">
             <span class="tech-icon">DB</span>
             <span class="tech-name">MariaDB SQL</span>
             <span class="tech-role">Base de datos relacional</span>
-          </div>
-          <div class="tech-item">
-            <span class="tech-icon">☕</span>
-            <span class="tech-name">Java EE</span>
-            <span class="tech-role">Lógica de negocio</span>
           </div>
           <div class="tech-item">
             <span class="tech-icon">NB</span>
@@ -306,11 +394,11 @@
       <div class="proj-section">
         <h2>Lo que aprendí</h2>
         <p>
-          Este proyecto fue mi primer acercamiento real a un sistema con persistencia de datos
-          usando Hibernate como ORM. Aprendí a mapear entidades Java con tablas relacionales,
-          a manejar sesiones y transacciones, y a construir una interfaz funcional con JSF
-          conectada a MariaDB. También reforcé buenas prácticas de organización del proyecto
-          dentro de NetBeans y el flujo de trabajo con un cliente institucional real.
+          Este proyecto me permitió aplicar el patrón MVC con Spring Framework por primera vez,
+          separando la lógica de negocio de la capa de presentación. Aprendí a configurar
+          controladores, mapear rutas y conectar la aplicación a una base de datos MariaDB.
+          También reforcé el diseño de modelos relacionales con múltiples entidades
+          (ventas, productos, clientes, categorías) y la generación de reportes desde la capa de datos.
         </p>
       </div>
 
@@ -323,6 +411,7 @@
 
   </div>
 
+  <!-- LIGHTBOX -->
   <div class="lightbox" id="lightbox" onclick="closeLightbox()">
     <button class="lightbox-close" onclick="closeLightbox()">✕ cerrar</button>
     <img id="lightbox-img" src="" alt="Captura ampliada">
