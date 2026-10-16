@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema de Gimnasio (MERN) — Joshua Aboytes</title>
+    <title>Zenith — Sistema de Gimnasio (MERN) — Joshua Aboytes</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap"
@@ -29,16 +29,24 @@
         <a href="../index.html#proyectos" class="back-link">← volver a proyectos</a>
 
         <div class="proj-header">
-            <div class="section-label">proyecto 06 — [completar año]</div>
-            <h1>Sistema de Gimnasio<br><span class="accent">(MERN)</span></h1>
+            <div class="section-label">proyecto 06 — 2025</div>
+            <h1>Zenith — Sistema<br>de <span class="accent">Gimnasio</span></h1>
             <div class="proj-meta">
                 <div class="meta-item">
                     <span class="meta-label">tipo</span>
-                    <span class="meta-value">Aplicación web</span>
+                    <span class="meta-value">Aplicación web fullstack</span>
                 </div>
                 <div class="meta-item">
                     <span class="meta-label">año</span>
-                    <span class="meta-value">[completar]</span>
+                    <span class="meta-value">2025</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">frontend</span>
+                    <span class="meta-value">React</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">backend</span>
+                    <span class="meta-value">Node.js</span>
                 </div>
                 <div class="meta-item">
                     <span class="meta-label">stack</span>
@@ -52,13 +60,49 @@
             <div class="gallery-grid gallery-grid--2">
 
                 <div class="gallery-item" onclick="openLightbox(this)">
-                    <img src="../img/proyecto6/captura1.png" alt="Captura 1">
-                    <span class="gallery-caption">[describe esta captura]</span>
+                    <img src="../img/proyecto6/loginZenith.png" alt="Inicio de sesión">
+                    <span class="gallery-caption">Inicio de sesión</span>
                 </div>
 
                 <div class="gallery-item" onclick="openLightbox(this)">
-                    <img src="../img/proyecto6/captura2.png" alt="Captura 2">
-                    <span class="gallery-caption">[describe esta captura]</span>
+                    <img src="../img/proyecto6/dashboardZ.png" alt="Panel principal">
+                    <span class="gallery-caption">Panel principal (dashboard)</span>
+                </div>
+
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="../img/proyecto6/miembros.png" alt="Gestión de miembros">
+                    <span class="gallery-caption">Gestión de miembros</span>
+                </div>
+
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="../img/proyecto6/edicion%20de%20miembros.png" alt="Edición de miembros">
+                    <span class="gallery-caption">Edición de miembros</span>
+                </div>
+
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="../img/proyecto6/planes.png" alt="Planes y membresías">
+                    <span class="gallery-caption">Planes y membresías</span>
+                </div>
+
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="../img/proyecto6/suscripciones.png" alt="Suscripciones">
+                    <span class="gallery-caption">Suscripciones</span>
+                </div>
+
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="../img/proyecto6/tienda.png" alt="Tienda de productos">
+                    <span class="gallery-caption">Tienda de productos</span>
+                </div>
+
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="../img/proyecto6/sistema%20de%20asistencia%20con%20escaneo%20qr.png"
+                        alt="Asistencia con escaneo QR">
+                    <span class="gallery-caption">Control de asistencia con escaneo QR</span>
+                </div>
+
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="../img/proyecto6/Auditoria.png" alt="Auditoría del sistema">
+                    <span class="gallery-caption">Auditoría / registro de actividad</span>
                 </div>
 
             </div>
@@ -69,16 +113,27 @@
             <div class="proj-section">
                 <h2>¿Qué es este proyecto?</h2>
                 <p>
-                    [Completar: descripción general del sistema de gimnasio — para quién se desarrolló,
-                    qué problema resuelve (gestión de socios, membresías, rutinas, etc.) y cómo se usa.]
+                    <strong style="color:var(--heading)">Zenith</strong> es una aplicación web
+                    fullstack desarrollada con el stack <strong style="color:var(--heading)">MERN</strong>
+                    para la administración integral de un gimnasio. Centraliza en una sola
+                    plataforma la gestión de los socios, sus planes y suscripciones, la venta de
+                    productos y el control de acceso, sustituyendo los registros manuales y las
+                    hojas de cálculo por un sistema centralizado.
                 </p>
             </div>
 
             <div class="proj-section">
                 <h2>Función principal</h2>
                 <p>
-                    [Completar: funciones principales, por ejemplo registro de socios, control de
-                    membresías y pagos, asignación de rutinas o clases, reportes de asistencia, etc.]
+                    Permite <strong style="color:var(--heading)">administrar miembros</strong>
+                    (alta, consulta y edición), definir
+                    <strong style="color:var(--heading)">planes y suscripciones</strong> con su
+                    vigencia, gestionar una <strong style="color:var(--heading)">tienda</strong>
+                    de productos y llevar el <strong style="color:var(--heading)">control de
+                        asistencia mediante escaneo de códigos QR</strong>. Además, el sistema
+                    genera un <strong style="color:var(--heading)">registro de auditoría</strong>
+                    con la actividad realizada, y todo se visualiza desde un panel principal
+                    con métricas del gimnasio.
                 </p>
             </div>
 
@@ -111,8 +166,12 @@
             <div class="proj-section">
                 <h2>Lo que aprendí</h2>
                 <p>
-                    [Completar: qué aprendiste trabajando con el stack MERN — por ejemplo manejo de
-                    estado en React, diseño de esquemas en MongoDB, autenticación, consumo de API, etc.]
+                    Este proyecto me permitió consolidar el stack MERN completo: construir la
+                    interfaz con componentes y estado en React, diseñar una API REST con
+                    Node.js y Express, y modelar la información en MongoDB. También trabajé la
+                    autenticación de usuarios, la generación y lectura de códigos QR para el
+                    control de asistencia, y la importancia de un registro de auditoría para
+                    dar trazabilidad a las operaciones del sistema.
                 </p>
             </div>
 
