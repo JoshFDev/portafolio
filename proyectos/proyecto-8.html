@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexoraLabs — Plataforma de Proyectos y Oportunidades — Joshua Aboytes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <nav class="nav">
+        <span class="nav-logo">dev<span class="accent">.</span>portfolio</span>
+        <ul class="nav-links">
+            <li><a href="../index.html#sobre-mi">sobre mí</a></li>
+            <li><a href="../index.html#habilidades">habilidades</a></li>
+            <li><a href="../index.html#proyectos">proyectos</a></li>
+            <li><a href="../index.html#contacto">contacto</a></li>
+        </ul>
+    </nav>
+
+    <div class="project-page">
+
+        <a href="../index.html#proyectos" class="back-link">← volver a proyectos</a>
+
+        <!-- HEADER -->
+        <div class="proj-header">
+            <div class="section-label">proyecto 08 — 2026</div>
+            <h1>NexoraLabs<br><span class="accent">Plataforma de Proyectos y Oportunidades</span></h1>
+
+            <div class="proj-meta">
+                <div class="meta-item">
+                    <span class="meta-label">tipo</span>
+                    <span class="meta-value">Aplicación web fullstack</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">año</span>
+                    <span class="meta-value">2026</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">frontend</span>
+                    <span class="meta-value">React + Vite</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">backend</span>
+                    <span class="meta-value">Node.js</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">stack</span>
+                    <span class="meta-value">MERN + Docker</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- GALLERY -->
+        <div class="gallery-section">
+            <div class="gallery-title">capturas del proyecto — haz clic para ampliar</div>
+            <div class="gallery-grid">
+
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="../img/proyecto8/loginNexoralabs.png" alt="Pantalla de login">
+                    <span class="gallery-caption">Inicio de sesión</span>
+                </div>
+
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="../img/proyecto8/registroCuenta.png" alt="Registro de cuenta">
+                    <span class="gallery-caption">Registro de cuenta</span>
+                </div>
+
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="../img/proyecto8/perfilUsuario.png" alt="Perfil de usuario">
+                    <span class="gallery-caption">Perfil de usuario</span>
+                </div>
+
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="../img/proyecto8/PerfilUser.png" alt="Edición del perfil">
+                    <span class="gallery-caption">Edición del perfil</span>
+                </div>
+
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="../img/proyecto8/opcionesBotonPerfil.png" alt="Opciones del menú de perfil">
+                    <span class="gallery-caption">Opciones del menú de perfil</span>
+                </div>
+
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="../img/proyecto8/habilidades.png" alt="Habilidades del usuario">
+                    <span class="gallery-caption">Habilidades</span>
+                </div>
+
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="../img/proyecto8/explorarProyectos.png" alt="Explorar proyectos">
+                    <span class="gallery-caption">Explorar proyectos</span>
+                </div>
+
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="../img/proyecto8/crearProyectp.png" alt="Crear proyecto">
+                    <span class="gallery-caption">Crear proyecto</span>
+                </div>
+
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="../img/proyecto8/misProyectos.png" alt="Mis proyectos">
+                    <span class="gallery-caption">Mis proyectos</span>
+                </div>
+
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="../img/proyecto8/postulaciones.png" alt="Postulaciones">
+                    <span class="gallery-caption">Postulaciones</span>
+                </div>
+
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="../img/proyecto8/equiposTrabajo.png" alt="Equipos de trabajo">
+                    <span class="gallery-caption">Equipos de trabajo</span>
+                </div>
+
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="../img/proyecto8/comunicacionEquipos.png" alt="Comunicación de equipos">
+                    <span class="gallery-caption">Comunicación entre equipos</span>
+                </div>
+
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="../img/proyecto8/recursosAprendizaje.png" alt="Recursos de aprendizaje">
+                    <span class="gallery-caption">Recursos de aprendizaje</span>
+                </div>
+
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="../img/proyecto8/mislogros.png" alt="Mis logros">
+                    <span class="gallery-caption">Mis logros</span>
+                </div>
+
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="../img/proyecto8/notificaciones.png" alt="Notificaciones">
+                    <span class="gallery-caption">Notificaciones</span>
+                </div>
+
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="../img/proyecto8/ajustesNotificaciones.png" alt="Ajustes de notificaciones">
+                    <span class="gallery-caption">Ajustes de notificaciones</span>
+                </div>
+
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="../img/proyecto8/dashboardAdmin.png" alt="Dashboard de administración">
+                    <span class="gallery-caption">Dashboard de administración</span>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- BODY -->
+        <div class="proj-body">
+
+            <div class="proj-section">
+                <h2>¿Qué es este proyecto?</h2>
+                <p>
+                    <strong style="color:var(--heading)">NexoraLabs</strong> es una plataforma web
+                    fullstack que conecta a estudiantes y personas en formación con proyectos reales,
+                    recursos de aprendizaje y oportunidades. Los usuarios pueden crear o explorar
+                    proyectos, formar equipos, declarar sus habilidades, acumular logros y postularse a
+                    ofertas de empleo o prácticas. El frontend está construido con
+                    <strong style="color:var(--heading)">React</strong> y
+                    <strong style="color:var(--heading)">Vite</strong>, y consume una API REST en
+                    Node.js/Express con persistencia en
+                    <strong style="color:var(--heading)">MongoDB</strong>. Todo el proyecto se puede
+                    levantar con contenedores mediante
+                    <strong style="color:var(--heading)">Docker Compose</strong>.
+                </p>
+            </div>
+
+            <div class="proj-section">
+                <h2>Módulos del sistema</h2>
+                <p style="margin-bottom:0">La plataforma cubre todo el recorrido de una persona en formación, desde su
+                    perfil hasta su primera oportunidad:</p>
+                <div class="modules-grid">
+                    <div class="module-card">
+                        <span class="module-title">Usuarios y perfiles</span>
+                        <span class="module-desc">Registro, login, edición con foto (recorte al subir), perfil público,
+                            habilidades e intereses</span>
+                    </div>
+                    <div class="module-card">
+                        <span class="module-title">Proyectos</span>
+                        <span class="module-desc">Creación con roles válidos, exploración con filtros, postulaciones y
+                            comentarios</span>
+                    </div>
+                    <div class="module-card">
+                        <span class="module-title">Equipos</span>
+                        <span class="module-desc">Creación (admin o mentor), solicitudes de ingreso, miembros y
+                            roles</span>
+                    </div>
+                    <div class="module-card">
+                        <span class="module-title">Recursos de aprendizaje</span>
+                        <span class="module-desc">Catálogo con búsqueda, filtros y calificaciones</span>
+                    </div>
+                    <div class="module-card">
+                        <span class="module-title">Ofertas de empleo</span>
+                        <span class="module-desc">Publicación, búsqueda, modalidad y postulación</span>
+                    </div>
+                    <div class="module-card">
+                        <span class="module-title">Logros</span>
+                        <span class="module-desc">Desbloqueo automático según la actividad del usuario</span>
+                    </div>
+                    <div class="module-card">
+                        <span class="module-title">Notificaciones</span>
+                        <span class="module-desc">Avisos de actividad con ajustes personalizables</span>
+                    </div>
+                    <div class="module-card">
+                        <span class="module-title">Roles y permisos</span>
+                        <span class="module-desc">Admin, mentor, desarrollador, ingeniero y estudiante con permisos
+                            distintos por módulo</span>
+                    </div>
+                    <div class="module-card">
+                        <span class="module-title">Dashboard de administración</span>
+                        <span class="module-desc">Estadísticas y gestión general de la plataforma</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="proj-section">
+                <h2>Stack tecnológico</h2>
+                <div class="tech-grid">
+                    <div class="tech-item">
+                        <span class="tech-icon">⚛</span>
+                        <span class="tech-name">React 19 + Vite</span>
+                        <span class="tech-role">Frontend SPA</span>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-icon">BS</span>
+                        <span class="tech-name">React-Bootstrap</span>
+                        <span class="tech-role">Componentes e interfaz (Bootstrap 5)</span>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-icon">RR</span>
+                        <span class="tech-name">React Router + Axios</span>
+                        <span class="tech-role">Navegación y cliente HTTP con manejo de token</span>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-icon">JS</span>
+                        <span class="tech-name">Node.js</span>
+                        <span class="tech-role">Entorno de ejecución backend</span>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-icon">EX</span>
+                        <span class="tech-name">Express</span>
+                        <span class="tech-role">Framework — API REST</span>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-icon">DB</span>
+                        <span class="tech-name">MongoDB + Mongoose</span>
+                        <span class="tech-role">Base de datos NoSQL y modelado</span>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-icon">JWT</span>
+                        <span class="tech-name">JSON Web Token</span>
+                        <span class="tech-role">Autenticación por token</span>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-icon">🛡</span>
+                        <span class="tech-name">Helmet, CORS, rate-limit</span>
+                        <span class="tech-role">Seguridad de la API</span>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-icon">🧪</span>
+                        <span class="tech-name">Jest, Supertest, Vitest</span>
+                        <span class="tech-role">Pruebas de API y de componentes</span>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-icon">🐳</span>
+                        <span class="tech-name">Docker + NGINX</span>
+                        <span class="tech-role">Contenedores, Docker Compose y servidor del frontend</span>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-icon">CI</span>
+                        <span class="tech-name">GitHub Actions</span>
+                        <span class="tech-role">Integración continua con ESLint y Prettier</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="proj-section">
+                <h2>Lo que aprendí</h2>
+                <p>
+                    Con NexoraLabs trabajé una aplicación de mayor escala, con múltiples módulos y
+                    <strong style="color:var(--heading)">permisos por rol</strong>: middlewares para
+                    verificar el token y autorizar cada acción, validación de datos y una API protegida
+                    con Helmet, CORS y límite de peticiones. En el frontend profundicé en React 19 y
+                    Vite, con rutas, componentes reutilizables y un cliente Axios que gestiona el
+                    token. También aprendí a escribir pruebas automatizadas con Jest, Supertest y
+                    Vitest contra una base de datos separada, a mantener la calidad del código con
+                    ESLint y Prettier en CI, y a
+                    <strong style="color:var(--heading)">dockerizar</strong> todo el proyecto con
+                    Docker Compose, un build multi-stage para el frontend servido por NGINX y la
+                    opción de elegir entre MongoDB Atlas o un contenedor local.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="proj-cta">
+            <a href="https://github.com/JoshFDev/NexoraLabs" target="_blank" class="btn btn-primary">Ver en GitHub</a>
+            <a href="../index.html#proyectos" class="btn btn-ghost">← Más proyectos</a>
+        </div>
+
+    </div>
+
+    <!-- LIGHTBOX -->
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <button class="lightbox-close" onclick="closeLightbox()">✕ cerrar</button>
+        <img id="lightbox-img" src="" alt="Captura ampliada">
+    </div>
+
+    <footer class="footer">
+        <span>© 2026 Aboytes Uribe Joshua Sebastian — Hecho con HTML, CSS y café.</span>
+    </footer>
+
+    <script>
+        function openLightbox(el) {
+            const img = el.querySelector('img');
+            if (!img) return;
+            document.getElementById('lightbox-img').src = img.src;
+            document.getElementById('lightbox').classList.add('active');
+        }
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+        }
+        document.addEventListener('keydown', e => {
+            if (e.key === 'Escape') closeLightbox();
+        });
+    </script>
+
+</body>
+
+</html>
