@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joshua Aboytes — Software Developer</title>
+    <title>Joshua Aboytes — Backend Developer</title>
+    <meta name="description" content="Joshua Sebastián Aboytes Uribe — Backend Developer y estudiante de Ingeniería en Computación en la UAEMex. APIs REST, bases de datos y arquitectura de software.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -23,14 +24,24 @@
     </nav>
 
     <section class="hero">
-        <div class="hero-tag">Software Developer</div>
+        <div class="hero-tag">Backend Developer · Estudiante de Ingeniería en Computación @ UAEMex</div>
         <h1 class="hero-title">
             Hola, soy<br>
-            <span class="accent">Joshua Sebastian Aboytes Uribe</span>
+            <span class="accent">Joshua Sebastián Aboytes Uribe</span>
         </h1>
+
+        <div class="hero-terminal">
+            <div class="terminal-bar"><span></span><span></span><span></span><em>joshua.config</em></div>
+<pre class="terminal-body"><span class="k">rol</span>:      <span class="s">"Backend Developer"</span>
+<span class="k">lenguajes</span>: <span class="s">["Java", "C#", "TypeScript"]</span>
+<span class="k">apis</span>:      <span class="s">["Spring Boot", "Express", ".NET"]</span>
+<span class="k">datos</span>:     <span class="s">["PostgreSQL", "MariaDB", "MongoDB"]</span>
+<span class="k">enfoque</span>:   <span class="s">"código mantenible"</span></pre>
+        </div>
+
         <p class="hero-sub">
-            Desarrollo aplicaciones web y de escritorio con enfoque en código limpio,
-            buenas prácticas y experiencias de usuario bien construidas.
+            Me interesa el ciclo completo detrás de una aplicación: diseño de APIs, modelado de
+            bases de datos, lógica de negocio y buenas prácticas de arquitectura de software.
         </p>
         <div class="hero-actions">
             <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
@@ -43,18 +54,24 @@
         <div class="section-label">01 — sobre mí</div>
         <div class="about-grid">
             <div class="about-text">
-                <h2>Desarrollador de software con visión full-stack</h2>
+                <h2>Backend developer con visión de punta a punta</h2>
                 <p>
-                    Soy desarrollador con experiencia en la construcción de sistemas web y de escritorio,
-                    trabajando desde el frontend hasta la base de datos. He participado en proyectos
-                    para instituciones como la Escuela Militar de Transmisiones y la Comisión Federal
-                    de Electricidad, así como en desarrollos colaborativos académicos.
+                    Soy estudiante de Ingeniería en Computación enfocado en el desarrollo backend.
+                    He construido sistemas web y de escritorio para instituciones como la Escuela
+                    Militar de Transmisiones y la Comisión Federal de Electricidad, además de
+                    desarrollos colaborativos académicos y sistemas para clientes reales.
                 </p>
                 <p>
-                    Me interesa escribir código que sea mantenible, entendible y que resuelva
-                    problemas reales. Actualmente profundizando en arquitectura de software,
-                    patrones de diseño y desarrollo con el stack MERN.
+                    Mi meta es convertirme en un backend developer sólido, escribiendo código
+                    que sea mantenible, entendible y que resuelva problemas reales.
                 </p>
+                <ul class="focus-list">
+                    <li>Trabajando con Java, C# y JavaScript/TypeScript del lado del servidor</li>
+                    <li>APIs REST con Spring Boot, Node.js + Express y .NET</li>
+                    <li>Ecosistema Java: Spring y JavaServer Faces (JSF)</li>
+                    <li>Frontend con React, Next.js, Angular y Bootstrap para consumir servicios de punta a punta</li>
+                    <li>Profundizando en bases de datos relacionales y no relacionales</li>
+                </ul>
             </div>
             <div class="about-stats">
                 <div class="stat-item">
@@ -77,15 +94,30 @@
         <div class="section-label">02 — habilidades</div>
         <h2>Stack técnico</h2>
         <div class="skills-grid">
-            <div class="skill-card">
-                <div class="skill-icon">&#60;/&#62;</div>
-                <h3>HTML5 & CSS3</h3>
-                <p>Semántica, Flexbox, Grid, diseño responsive y accesibilidad.</p>
+            <div class="skill-card core">
+                <div class="skill-icon">☕</div>
+                <h3>Java & Spring</h3>
+                <p>Spring Boot, Spring Framework, JSF, Hibernate y aplicaciones empresariales.</p>
+            </div>
+            <div class="skill-card core">
+                <div class="skill-icon">&#123;N&#125;</div>
+                <h3>Node.js & Express</h3>
+                <p>APIs REST, middlewares, JWT, validación y conexión con bases SQL y NoSQL.</p>
+            </div>
+            <div class="skill-card core">
+                <div class="skill-icon">C#</div>
+                <h3>C# & .NET</h3>
+                <p>APIs y aplicaciones de escritorio con WinForms y lógica de negocio.</p>
+            </div>
+            <div class="skill-card core">
+                <div class="skill-icon">DB</div>
+                <h3>Bases de datos</h3>
+                <p>PostgreSQL, MariaDB, MySQL y MongoDB. Modelado, triggers y consultas SQL.</p>
             </div>
             <div class="skill-card">
-                <div class="skill-icon">JS</div>
-                <h3>JavaScript</h3>
-                <p>DOM, ES6+, fetch API, lógica de interfaz y consumo de APIs.</p>
+                <div class="skill-icon">TS</div>
+                <h3>JavaScript & TypeScript</h3>
+                <p>ES6+, tipado estático, consumo de APIs y lógica del lado del servidor.</p>
             </div>
             <div class="skill-card">
                 <div class="skill-icon">▲</div>
@@ -94,33 +126,18 @@
             </div>
             <div class="skill-card">
                 <div class="skill-icon">⚛</div>
-                <h3>React</h3>
-                <p>Componentes funcionales, hooks, estado y props.</p>
+                <h3>React & Next.js</h3>
+                <p>Componentes funcionales, hooks, estado y consumo de servicios.</p>
             </div>
             <div class="skill-card">
-                <div class="skill-icon">&#123;N&#125;</div>
-                <h3>Node.js & Express</h3>
-                <p>APIs REST, middlewares, conexión con bases de datos relacionales y NoSQL.</p>
-            </div>
-            <div class="skill-card">
-                <div class="skill-icon">DB</div>
-                <h3>Bases de datos</h3>
-                <p>MariaDB, MySQL, MongoDB. Modelado relacional y consultas SQL.</p>
-            </div>
-            <div class="skill-card">
-                <div class="skill-icon">☕</div>
-                <h3>Java</h3>
-                <p>JSF, Hibernate, Spring Framework y aplicaciones empresariales.</p>
-            </div>
-            <div class="skill-card">
-                <div class="skill-icon">C#</div>
-                <h3>C# & .NET</h3>
-                <p>Aplicaciones de escritorio con WinForms y lógica de negocio.</p>
+                <div class="skill-icon">&#60;/&#62;</div>
+                <h3>HTML, CSS & Bootstrap</h3>
+                <p>Semántica, Flexbox, Grid, diseño responsive y accesibilidad.</p>
             </div>
             <div class="skill-card">
                 <div class="skill-icon">⌥</div>
-                <h3>Git & GitHub</h3>
-                <p>Control de versiones, ramas, pull requests y trabajo colaborativo.</p>
+                <h3>Git, GitHub & Docker</h3>
+                <p>Control de versiones, pull requests, CI y contenedores con Docker Compose.</p>
             </div>
         </div>
     </section>
@@ -130,86 +147,56 @@
         <h2>Trabajo reciente</h2>
         <div class="projects-grid">
 
-            <div class="project-card">
+            <div class="project-card featured">
                 <div class="project-header">
-                    <span class="project-tag">JSF · Hibernate · MariaDB</span>
-                    <span class="project-num">01</span>
+                    <span class="project-tag">Angular · Express · TypeScript · PostgreSQL</span>
+                    <span class="project-num">09</span>
                 </div>
-                <h3 class="project-title">Sistema de Gestión de Cadetes</h3>
+                <h3 class="project-title">Nutrición Especializada — POS, Inventario y Cartera</h3>
                 <p class="project-desc">
-                    Aplicación web interna desarrollada en 2024 para la Escuela Militar de Transmisiones.
-                    Gestiona el ingreso, alta, baja y consulta de cadetes con persistencia en MariaDB vía Hibernate.
+                    Sistema desarrollado para un cliente real que automatiza procesos que se llevaban en
+                    Excel: punto de venta con notas de remisión en PDF, inventario, cartera de clientes y
+                    proveedores, y control de caja y bancos. Cuenta con roles y permisos, auditoría
+                    automática mediante triggers en PostgreSQL y más de 800 pruebas de API.
                 </p>
                 <div class="project-actions">
-                    <a href="proyectos/proyecto-1.html" class="btn btn-small">Ver proyecto</a>
+                    <a href="proyectos/proyecto-9.html" class="btn btn-small">Ver proyecto</a>
                     <a href="https://github.com/JoshFDev" target="_blank" class="btn btn-small btn-ghost">GitHub</a>
+                </div>
+            </div>
+
+            <div class="project-card featured">
+                <div class="project-header">
+                    <span class="project-tag">React · Node.js · MongoDB · Docker</span>
+                    <span class="project-num">08</span>
+                </div>
+                <h3 class="project-title">NexoraLabs — Plataforma de Proyectos y Oportunidades</h3>
+                <p class="project-desc">
+                    Plataforma web que conecta a estudiantes y personas en formación con proyectos reales,
+                    recursos de aprendizaje y ofertas de empleo. Incluye equipos de trabajo, habilidades,
+                    logros automáticos, notificaciones y roles con permisos por módulo, con pruebas
+                    automatizadas y despliegue con Docker Compose.
+                </p>
+                <div class="project-actions">
+                    <a href="proyectos/proyecto-8.html" class="btn btn-small">Ver proyecto</a>
+                    <a href="https://github.com/JoshFDev/NexoraLabs" target="_blank" class="btn btn-small btn-ghost">GitHub</a>
                 </div>
             </div>
 
             <div class="project-card">
                 <div class="project-header">
-                    <span class="project-tag">Spring · Java · MariaDB</span>
-                    <span class="project-num">02</span>
+                    <span class="project-tag">Angular · Node.js · MongoDB · Express</span>
+                    <span class="project-num">07</span>
                 </div>
-                <h3 class="project-title">Sistema de Punto de Venta</h3>
+                <h3 class="project-title">VectorBank — Sistema Bancario</h3>
                 <p class="project-desc">
-                    Aplicación web con Spring Framework que gestiona ventas, inventario, clientes
-                    y categorías. Incluye módulos de alta, consulta y generación de reportes de transacciones.
+                    Banca en línea desarrollada con stack MEAN (Angular, Node.js, Express y MongoDB).
+                    Simula operaciones financieras: cuentas, depósitos, transferencias e historial de
+                    movimientos, con inicio de sesión tradicional y por huella, notificaciones,
+                    modo oscuro y panel de administración.
                 </p>
                 <div class="project-actions">
-                    <a href="proyectos/proyecto-2.html" class="btn btn-small">Ver proyecto</a>
-                    <a href="https://github.com/JoshFDev" target="_blank" class="btn btn-small btn-ghost">GitHub</a>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-header">
-                    <span class="project-tag">Angular · Node.js · MariaDB · Express</span>
-                    <span class="project-num">03</span>
-                </div>
-                <h3 class="project-title">Sistema de Gestión de Club Deportivo</h3>
-                <p class="project-desc">
-                    Plataforma web full-stack desarrollada en equipo para administrar un club deportivo.
-                    Gestiona miembros, entrenadores, disciplinas, inscripciones y eventos. Angular 17
-                    en el frontend, Node.js con Express en el backend y MariaDB como base de datos.
-                </p>
-                <div class="project-actions">
-                    <a href="proyectos/proyecto-3.html" class="btn btn-small">Ver proyecto</a>
-                    <a href="https://github.com/JoshFDev" target="_blank" class="btn btn-small btn-ghost">GitHub</a>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-header">
-                    <span class="project-tag">C# · MariaDB · WinForms</span>
-                    <span class="project-num">04</span>
-                </div>
-                <h3 class="project-title">Sistema Gestor de Aulas para Cursos</h3>
-                <p class="project-desc">
-                    Aplicación de escritorio desarrollada para la Comisión Federal de Electricidad (CFE).
-                    Administra la impartición de cursos de capacitación por zona geográfica, permitiendo
-                    asignar aulas, instructores y horarios de forma local.
-                </p>
-                <div class="project-actions">
-                    <a href="proyectos/proyecto-4.html" class="btn btn-small">Ver proyecto</a>
-                    <a href="https://github.com/JoshFDev" target="_blank" class="btn btn-small btn-ghost">GitHub</a>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-header">
-                    <span class="project-tag">Angular · Node.js · MariaDB · Express</span>
-                    <span class="project-num">05</span>
-                </div>
-                <h3 class="project-title">Sistema de Pagos UMA — CFE</h3>
-                <p class="project-desc">
-                    Sistema web desarrollado durante mi práctica integrativa en CFE Zona Sur Volcanes.
-                    Automatiza el cálculo del pago a instructores con base en unidades de medida y
-                    actualización (UMA) y horas impartidas, eliminando el proceso manual y reduciendo
-                    errores en la liquidación de cursos.
-                </p>
-                <div class="project-actions">
-                    <a href="proyectos/proyecto-5.html" class="btn btn-small">Ver proyecto</a>
+                    <a href="proyectos/proyecto-7.html" class="btn btn-small">Ver proyecto</a>
                     <a href="https://github.com/JoshFDev" target="_blank" class="btn btn-small btn-ghost">GitHub</a>
                 </div>
             </div>
@@ -234,54 +221,84 @@
 
             <div class="project-card">
                 <div class="project-header">
-                    <span class="project-tag">Angular · Node.js · MongoDB · Express</span>
-                    <span class="project-num">07</span>
+                    <span class="project-tag">Angular · Node.js · MariaDB · Express</span>
+                    <span class="project-num">05</span>
                 </div>
-                <h3 class="project-title">VectorBank — Sistema Bancario</h3>
+                <h3 class="project-title">Sistema de Pagos UMA — CFE</h3>
                 <p class="project-desc">
-                    Banca en línea desarrollada con stack MEAN (Angular, Node.js, Express y MongoDB).
-                    Simula operaciones financieras: cuentas, depósitos, transferencias e historial de
-                    movimientos, con inicio de sesión tradicional y por huella, notificaciones,
-                    modo oscuro y panel de administración.
+                    Sistema web desarrollado durante mi práctica integrativa en CFE Zona Sur Volcanes.
+                    Automatiza el cálculo del pago a instructores con base en unidades de medida y
+                    actualización (UMA) y horas impartidas, eliminando el proceso manual y reduciendo
+                    errores en la liquidación de cursos.
                 </p>
                 <div class="project-actions">
-                    <a href="proyectos/proyecto-7.html" class="btn btn-small">Ver proyecto</a>
+                    <a href="proyectos/proyecto-5.html" class="btn btn-small">Ver proyecto</a>
                     <a href="https://github.com/JoshFDev" target="_blank" class="btn btn-small btn-ghost">GitHub</a>
                 </div>
             </div>
 
             <div class="project-card">
                 <div class="project-header">
-                    <span class="project-tag">React · Node.js · MongoDB · Docker</span>
-                    <span class="project-num">08</span>
+                    <span class="project-tag">C# · MariaDB · WinForms</span>
+                    <span class="project-num">04</span>
                 </div>
-                <h3 class="project-title">NexoraLabs — Plataforma de Proyectos y Oportunidades</h3>
+                <h3 class="project-title">Sistema Gestor de Aulas para Cursos</h3>
                 <p class="project-desc">
-                    Plataforma web que conecta a estudiantes y personas en formación con proyectos reales,
-                    recursos de aprendizaje y ofertas de empleo. Incluye equipos de trabajo, habilidades,
-                    logros automáticos, notificaciones y roles con permisos por módulo, con pruebas
-                    automatizadas y despliegue con Docker Compose.
+                    Aplicación de escritorio desarrollada para la Comisión Federal de Electricidad (CFE).
+                    Administra la impartición de cursos de capacitación por zona geográfica, permitiendo
+                    asignar aulas, instructores y horarios de forma local.
                 </p>
                 <div class="project-actions">
-                    <a href="proyectos/proyecto-8.html" class="btn btn-small">Ver proyecto</a>
-                    <a href="https://github.com/JoshFDev/NexoraLabs" target="_blank" class="btn btn-small btn-ghost">GitHub</a>
+                    <a href="proyectos/proyecto-4.html" class="btn btn-small">Ver proyecto</a>
+                    <a href="https://github.com/JoshFDev" target="_blank" class="btn btn-small btn-ghost">GitHub</a>
                 </div>
             </div>
 
             <div class="project-card">
                 <div class="project-header">
-                    <span class="project-tag">Angular · Express · TypeScript · PostgreSQL</span>
-                    <span class="project-num">09</span>
+                    <span class="project-tag">Angular · Node.js · MariaDB · Express</span>
+                    <span class="project-num">03</span>
                 </div>
-                <h3 class="project-title">Nutrición Especializada — POS, Inventario y Cartera</h3>
+                <h3 class="project-title">Sistema de Gestión de Club Deportivo</h3>
                 <p class="project-desc">
-                    Sistema desarrollado para un cliente real que automatiza procesos que se llevaban en
-                    Excel: punto de venta con notas de remisión en PDF, inventario, cartera de clientes y
-                    proveedores, y control de caja y bancos. Cuenta con roles y permisos, auditoría
-                    automática mediante triggers en PostgreSQL y más de 800 pruebas de API.
+                    Plataforma web full-stack desarrollada en equipo para administrar un club deportivo.
+                    Gestiona miembros, entrenadores, disciplinas, inscripciones y eventos. Angular 17
+                    en el frontend, Node.js con Express en el backend y MariaDB como base de datos.
                 </p>
                 <div class="project-actions">
-                    <a href="proyectos/proyecto-9.html" class="btn btn-small">Ver proyecto</a>
+                    <a href="proyectos/proyecto-3.html" class="btn btn-small">Ver proyecto</a>
+                    <a href="https://github.com/JoshFDev" target="_blank" class="btn btn-small btn-ghost">GitHub</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <span class="project-tag">Spring · Java · MariaDB</span>
+                    <span class="project-num">02</span>
+                </div>
+                <h3 class="project-title">Sistema de Punto de Venta</h3>
+                <p class="project-desc">
+                    Aplicación web con Spring Framework que gestiona ventas, inventario, clientes
+                    y categorías. Incluye módulos de alta, consulta y generación de reportes de transacciones.
+                </p>
+                <div class="project-actions">
+                    <a href="proyectos/proyecto-2.html" class="btn btn-small">Ver proyecto</a>
+                    <a href="https://github.com/JoshFDev" target="_blank" class="btn btn-small btn-ghost">GitHub</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <span class="project-tag">JSF · Hibernate · MariaDB</span>
+                    <span class="project-num">01</span>
+                </div>
+                <h3 class="project-title">Sistema de Gestión de Cadetes</h3>
+                <p class="project-desc">
+                    Aplicación web interna desarrollada en 2024 para la Escuela Militar de Transmisiones.
+                    Gestiona el ingreso, alta, baja y consulta de cadetes con persistencia en MariaDB vía Hibernate.
+                </p>
+                <div class="project-actions">
+                    <a href="proyectos/proyecto-1.html" class="btn btn-small">Ver proyecto</a>
                     <a href="https://github.com/JoshFDev" target="_blank" class="btn btn-small btn-ghost">GitHub</a>
                 </div>
             </div>

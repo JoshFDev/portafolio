@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nutrición Especializada — POS, Inventario y Cartera — Joshua Aboytes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <span class="nav-logo">dev<span class="accent">.</span>portfolio</span>
+    <ul class="nav-links">
+      <li><a href="../index.html#sobre-mi">sobre mí</a></li>
+      <li><a href="../index.html#habilidades">habilidades</a></li>
+      <li><a href="../index.html#proyectos">proyectos</a></li>
+      <li><a href="../index.html#contacto">contacto</a></li>
+    </ul>
+  </nav>
+
+  <div class="project-page">
+
+    <a href="../index.html#proyectos" class="back-link">← volver a proyectos</a>
+
+    <!-- HEADER -->
+    <div class="proj-header">
+      <div class="section-label">proyecto 09 — 2026</div>
+      <h1>Nutrición Especializada<br><span class="accent">POS, Inventario y Cartera</span></h1>
+
+      <div class="proj-meta">
+        <div class="meta-item">
+          <span class="meta-label">tipo</span>
+          <span class="meta-value">Sistema para cliente real</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">año</span>
+          <span class="meta-value">2026</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">frontend</span>
+          <span class="meta-value">Angular</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">backend</span>
+          <span class="meta-value">Express + TypeScript</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">base de datos</span>
+          <span class="meta-value">PostgreSQL</span>
+        </div>
+      </div>
+    </div>
+
+    <!--
+    GALERÍA (opcional): cuando tengas capturas, descomenta este bloque,
+    copia tus imágenes a img/proyecto9/ y ajusta los nombres.
+
+    <div class="gallery-section">
+      <div class="gallery-title">capturas del proyecto — haz clic para ampliar</div>
+      <div class="gallery-grid">
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="../img/proyecto9/pos.png" alt="Punto de venta">
+          <span class="gallery-caption">Punto de venta</span>
+        </div>
+      </div>
+    </div>
+    -->
+
+    <!-- BODY -->
+    <div class="proj-body">
+
+      <div class="proj-section">
+        <h2>¿Qué es este proyecto?</h2>
+        <p>
+          <strong style="color:var(--heading)">Nutrición Especializada</strong> es un sistema
+          desarrollado para un cliente real que automatiza los procesos que hasta ahora se
+          llevaban en hojas de Excel: punto de venta con
+          <strong style="color:var(--heading)">notas de remisión</strong>, inventario semanal,
+          cartera de clientes y proveedores, y flujo de caja y bancos.
+        </p>
+        <p>
+          La base de datos en <strong style="color:var(--heading)">PostgreSQL</strong> concentra
+          buena parte de la lógica: triggers que descuentan el inventario al vender, recalculan
+          saldos y registran una bitácora de auditoría. Sobre ella, una API REST en Express con
+          TypeScript y un frontend en Angular con menú y rutas filtrados por permisos.
+        </p>
+      </div>
+
+      <div class="proj-section">
+        <h2>Módulos del sistema</h2>
+        <p style="margin-bottom:0">Dieciséis módulos de negocio expuestos por la API y con pantalla en el frontend:</p>
+        <div class="modules-grid">
+          <div class="module-card">
+            <span class="module-title">Punto de venta</span>
+            <span class="module-desc">Notas de remisión con cliente, renglones, direcciones de entrega, totales y PDF para imprimir</span>
+          </div>
+          <div class="module-card">
+            <span class="module-title">Inventario</span>
+            <span class="module-desc">Kárdex y foto semanal, descuento automático al vender, ajustes y mermas con motivo obligatorio</span>
+          </div>
+          <div class="module-card">
+            <span class="module-title">Clientes y precios</span>
+            <span class="module-desc">Catálogo de clientes, precios de lista y precios especiales por cliente sin traslape</span>
+          </div>
+          <div class="module-card">
+            <span class="module-title">Proveedores y compras</span>
+            <span class="module-desc">Compras por bulto y kilo, alta automática en inventario y saldo del proveedor</span>
+          </div>
+          <div class="module-card">
+            <span class="module-title">Pagos y cartera</span>
+            <span class="module-desc">Abonos aplicados a notas con validación de saldos y estado de cuenta por cliente</span>
+          </div>
+          <div class="module-card">
+            <span class="module-title">Caja y bancos</span>
+            <span class="module-desc">Cuentas, ingresos y egresos, resumen por periodo y cierre diario esperado</span>
+          </div>
+          <div class="module-card">
+            <span class="module-title">Facturación</span>
+            <span class="module-desc">Factura una o varias notas con reglas para evitar duplicados y cancelación con motivo</span>
+          </div>
+          <div class="module-card">
+            <span class="module-title">Reportes y Excel</span>
+            <span class="module-desc">Existencia, consumo semanal promedio y estado de cuenta, con hoja de Excel por cliente o masiva</span>
+          </div>
+          <div class="module-card">
+            <span class="module-title">Usuarios, roles y permisos</span>
+            <span class="module-desc">Control de acceso por permisos (RBAC) con roles de Administrador, Empleada y Cajera</span>
+          </div>
+          <div class="module-card">
+            <span class="module-title">Auditoría</span>
+            <span class="module-desc">Bitácoras de accesos, caja, inventario y precios con valores antes y después, solo lectura</span>
+          </div>
+          <div class="module-card">
+            <span class="module-title">Catálogos</span>
+            <span class="module-desc">Especies, categorías, almacenes y direcciones de entrega editables desde la app</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-section">
+        <h2>Stack tecnológico</h2>
+        <div class="tech-grid">
+          <div class="tech-item">
+            <span class="tech-icon">▲</span>
+            <span class="tech-name">Angular</span>
+            <span class="tech-role">Frontend SPA con signals, sin NgModules</span>
+          </div>
+          <div class="tech-item">
+            <span class="tech-icon">TS</span>
+            <span class="tech-name">TypeScript</span>
+            <span class="tech-role">Tipado en backend y frontend</span>
+          </div>
+          <div class="tech-item">
+            <span class="tech-icon">EX</span>
+            <span class="tech-name">Express</span>
+            <span class="tech-role">API REST por módulos</span>
+          </div>
+          <div class="tech-item">
+            <span class="tech-icon">PG</span>
+            <span class="tech-name">PostgreSQL</span>
+            <span class="tech-role">Triggers, vistas, migraciones versionadas</span>
+          </div>
+          <div class="tech-item">
+            <span class="tech-icon">Zod</span>
+            <span class="tech-name">Zod</span>
+            <span class="tech-role">Validación de entradas y del entorno</span>
+          </div>
+          <div class="tech-item">
+            <span class="tech-icon">PDF</span>
+            <span class="tech-name">pdfkit + ExcelJS</span>
+            <span class="tech-role">PDF de notas de remisión y hojas de Excel</span>
+          </div>
+          <div class="tech-item">
+            <span class="tech-icon">🔐</span>
+            <span class="tech-name">bcrypt + sesiones</span>
+            <span class="tech-role">Contraseñas con hash y token guardado como hash</span>
+          </div>
+          <div class="tech-item">
+            <span class="tech-icon">🧪</span>
+            <span class="tech-name">Pruebas</span>
+            <span class="tech-role">841 pruebas de API, unitarias y pruebas en SQL</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-section">
+        <h2>Lo que aprendí</h2>
+        <p>
+          Este proyecto me enseñó a llevar la
+          <strong style="color:var(--heading)">integridad del negocio a la base de datos</strong>:
+          triggers para folios, inventario y saldos, restricciones que obligan a justificar
+          ajustes y cancelaciones, y auditoría automática que sabe qué usuario hizo cada cambio.
+          Del lado de la API trabajé con transacciones y bloqueos (<code>SELECT … FOR UPDATE</code>)
+          para evitar que dos operaciones simultáneas se pisen el saldo de una cuenta.
+        </p>
+        <p>
+          También diseñé un modelo de <strong style="color:var(--heading)">roles y permisos</strong>
+          que gobierna tanto las rutas de la API como el menú del frontend, generé PDF fieles a la
+          plantilla de Excel del negocio y aprendí a sostener el sistema con una suite de pruebas
+          reejecutable contra una base aparte. Todo al servicio de un cliente real, con requisitos
+          que cambian y datos que importan.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="proj-cta">
+      <a href="https://github.com/JoshFDev" target="_blank" class="btn btn-primary">Ver en GitHub</a>
+      <a href="../index.html#proyectos" class="btn btn-ghost">← Más proyectos</a>
+    </div>
+
+  </div>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <button class="lightbox-close" onclick="closeLightbox()">✕ cerrar</button>
+    <img id="lightbox-img" src="" alt="Captura ampliada">
+  </div>
+
+  <footer class="footer">
+    <span>© 2026 Aboytes Uribe Joshua Sebastian — Hecho con HTML, CSS y café.</span>
+  </footer>
+
+  <script>
+    function openLightbox(el) {
+      const img = el.querySelector('img');
+      if (!img) return;
+      document.getElementById('lightbox-img').src = img.src;
+      document.getElementById('lightbox').classList.add('active');
+    }
+    function closeLightbox() {
+      document.getElementById('lightbox').classList.remove('active');
+    }
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') closeLightbox();
+    });
+  </script>
+
+</body>
+</html>
